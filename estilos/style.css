@@ -24,7 +24,6 @@ main{
     height: 100vh;
     background-image: url(../imagens/fundo-login-3.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
