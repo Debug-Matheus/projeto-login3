@@ -21,7 +21,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    min-height: 100dvh;
+    height: 100vh;
     background-image: url(../imagens/fundo-login-3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
