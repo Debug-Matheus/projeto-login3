@@ -6,6 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --cor1: #1D2913;
+}
 
 body, html {
     height: 100vh;
@@ -26,9 +29,149 @@ main{
 }
 section.login{
     display: flex;
-    border: 1px solid white;
-    width: 60%;
-    height: 40%;
+    width: 92%;
+    max-width: 900px;
+    min-height: 265px;
+    
     border-radius: 20px;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.26);
+    background: rgba(255, 255, 255, 0.15); /* branco transparente */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borda mais clara */
+  backdrop-filter: blur(10px); /* efeito fosco */
+  -webkit-backdrop-filter: blur(10px); /* para compatibilidade */
+}
+section.login > div#icon{
+    background-color: #1D2913;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.26);
+    
+}
+section.login > div#icon > img{
+    width: 51px;
+    display: block;
+    margin: auto;
+    padding: 10px 0px;
+}
+div#formulario{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+form{
+    width: 100%;
+}
+form > div.email{
+    display: flex;
+    margin: 56px 20px 0px 20px;
+    background-color: #E6E6E6;
+    height: 38px;
+}
+form > div.senha{
+    display: flex;
+    margin: 12px 20px 0px 20px;
+    background-color: #E6E6E6;
+    height: 38px;
+}
+form > div.email > span{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #545454;
+    font-size: 20px;
+}
+form > div.senha > span{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #545454;
+    font-size: 20px;
+}
+div#formulario input{
+    flex: auto;
+    background-color: #CCCCCC;
+    border: none;
+    padding: 2px 7px;
+    height: 38px;
+}
+div.email input[type="email"]:-webkit-autofill {
+    border: none;
+    box-shadow: none;
+  -webkit-box-shadow: 0 0 0px 1000px #1D2913 inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+div.senha input[type="password"]:-webkit-autofill {
+    border: none;
+    box-shadow: none;
+  -webkit-box-shadow: 0 0 0px 1000px #1D2913 inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+div.email>input:focus, div.senha> input:focus{
+    outline: none;
+}
+
+div#formulario input::placeholder{
+    color: rgba(0, 0, 0, 0.493);
+    letter-spacing: 0.5px;
+    font-size: 13.50px;
+}
+div.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 30px 0px 25px;
+    font-size: 11px;
+    color: #cccccc;
+}
+
+div.options-container div.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+label.container-label {
+    cursor: pointer;
+}
+div.options-container input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    accent-color: #1D2913; /* cor do seu tema */
+}
+
+div.options-container #forgot {
+    text-decoration: none;
+    color: #d2d2d2;
+    font-style: italic;
+    font-size: 11px;
+}
+
+div.options-container #forgot:hover {
+    text-decoration: underline;
+}
+
+input.login-button {
+    display: block;
+    width: calc(100% - 41px);
+    margin: 10px auto 0 auto;
+    padding: 10px 0;
+    background-color: var(--cor1)  !important;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input.login-button:hover {
+    background-color: #263a1a !important; 
 }

@@ -14,14 +14,26 @@
     <main>
         <section class="login">
             <div id="icon">
-                <img src="" alt="">
+                <img src="imagens/person.png" alt="icone de pessoa">
             </div>
-            <div>
+            <div id="formulario">
                 <form action="cadastro.php" autocomplete="on" method="post">
-                    <div id="email">
+                    <div class="email">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="email" name="email" id="iemail">
+                        <input type="email" name="email" id="iemail" autocomplete="email" required maxlength="40" placeholder="Email ID">
                     </div>
+                    <div class="senha">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Password">
+                    </div>
+                    <div class="options-container">
+                        <div class="remember">
+                            <input type="checkbox" name="lembrar" id="ilembrar">
+                            <label for="ilembrar" class="container-label">Remember me </label>
+                        </div>
+                        <a href="#" id="forgot">Forgot Password</a>
+                    </div>
+                    <input type="submit" value="LOGIN" class="login-button">
                 </form>
             </div>
         </section>
