@@ -172,6 +172,10 @@ input.login-button {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none !important;
+    outline: none !important;
 }
 input.login-button:hover {
     background-color: #263a1a !important; 
