@@ -120,24 +120,7 @@ div.senha input[type="password"]:-webkit-autofill {
 div.email>input:focus, div.senha> input:focus{
     outline: none !important;
 }
-/* Remover borda e estilização do Safari/iOS */
-input,
-input:focus,
-input[type="submit"],
-input[type="submit"]:focus {
-    border: none !important;
-    outline: none !important;
-    -webkit-appearance: none !important;
-    box-shadow: none !important;
-}
 
-/* Correção específica do botão de login */
-input.login-button {
-    border: none !important;
-    outline: none !important;
-    -webkit-appearance: none !important;
-    box-shadow: none !important;
-}
 div#formulario input::placeholder{
     color: rgba(0, 0, 0, 0.493);
     letter-spacing: 0.5px;
