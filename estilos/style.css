@@ -99,26 +99,26 @@ form > div.senha > span{
 div#formulario input{
     flex: auto;
     background-color: #CCCCCC;
-    border: none !important;
+    border: none;
     padding: 2px 7px;
     height: 38px;
 }
 div.email input[type="email"]:-webkit-autofill {
-    border: none !important;
-    box-shadow: none !important;
+    border: none;
+    box-shadow: none;
   -webkit-box-shadow: 0 0 0px 1000px #1D2913 inset !important;
   -webkit-text-fill-color: white !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 div.senha input[type="password"]:-webkit-autofill {
-    border: none !important;
-    box-shadow: none !important;
+    border: none;
+    box-shadow: none;
   -webkit-box-shadow: 0 0 0px 1000px #1D2913 inset !important;
   -webkit-text-fill-color: white !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 div.email>input:focus, div.senha> input:focus{
-    outline: none !important;
+    outline: none ;
 }
 
 div#formulario input::placeholder{
@@ -172,10 +172,6 @@ input.login-button {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    appearance: none;
-    -webkit-appearance: none;
-    border: none !important;
-    outline: none !important;
 }
 input.login-button:hover {
     background-color: #263a1a !important; 
